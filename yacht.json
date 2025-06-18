@@ -3,9 +3,9 @@
   "type": 1,
   "title": "KIStack1",
   "name": "kistack1",
-  "description": "Künstliche Intelligenz Stack Beispiel mit GPU, CPU und RAM Ressourcenprofil und NVIDIA Unterstützung.",
+  "description": "KI Stack mit NVIDIA Unterstützung und Pytouch und Jypiter Notebook.",
   "logo": "https://your-image-url.de/kistack1logo.png",
-  "image": "b/kistack1:1.0",
+  "image": "bbtgmbh/kistack1:1.0",
   "categories": [
     "KI",
     "Tools"
