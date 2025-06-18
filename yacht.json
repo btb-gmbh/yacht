@@ -1,4 +1,42 @@
 [
+	{
+  "type": 1,
+  "title": "KIStack1",
+  "name": "kistack1",
+  "description": "Künstliche Intelligenz Stack Beispiel mit GPU, CPU und RAM Ressourcenprofil und NVIDIA Unterstützung.",
+  "logo": "https://your-image-url.de/kistack1logo.png",
+  "image": "b/kistack1:1.0",
+  "categories": [
+    "KI",
+    "Tools"
+  ],
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "ports": [
+    {
+      "WebUI": "8899:8888/tcp"
+    }
+  ],
+  "env": [
+    {
+      "name": "NVIDIA_VISIBLE_DEVICES",
+      "label": "NVIDIA_VISIBLE_DEVICES",
+      "default": "0"
+    }
+  ],
+  "resources": {
+    "cpus": 4.0,
+    "mem_limit": "8g",
+    "gpus": 1
+  },
+  "volumes": [
+    {
+      "container": "/config",
+      "bind": "!config/KIStack1"
+    }
+  ],
+  "note": "Für GPU-Unterstützung müssen entsprechende NVIDIA-Treiber auf dem Host installiert sein. Dieser Service entspricht docker-compose Ressourcen und nutzt explizit einen NVIDIA-Grafikprozessor."
+},
     {
       "type": 1,
       "title": "Phpmyadmin",
