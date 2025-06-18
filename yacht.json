@@ -5,7 +5,7 @@
   "name": "kistack1",
   "description": "KI Stack mit NVIDIA Unterstützung und Pytouch und Jypiter Notebook.",
   "logo": "https://your-image-url.de/kistack1logo.png",
-  "image": "bbtgmbh/kistack1:1.0",
+  "image": "btbgmbh/kistack1:1.0",
   "categories": [
     "KI",
     "Tools"
